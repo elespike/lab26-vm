@@ -4,13 +4,14 @@
 Coming soon...
 
 ## Credentials
-|---------:|:---------|
-| Username | tux      |
-| Password | password |
+| Username | Password |
+|----------|----------|
+|      tux | password |
 
 ## Release process
 This VM is built using [Vagrant](https://blog.lab26.net/vagrant-first-steps-debian-buster-install/)
-0. Assuming Vagrant is already installed, clone the repository and issue `vagrant up`
+
+1. Assuming Vagrant is already installed, clone the repository and issue `vagrant up`
 0. Log in to the VM and verify that `mitmweb` is starting automatically
 0. Open a terminal session and issue `cd ~/juice-shop && npm install`
 0. Open the web browser to install bWAPP, DVWA, and Mutillidae by visiting their respective setup pages

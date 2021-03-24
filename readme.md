@@ -1,7 +1,7 @@
 # Lab 26: a collection of vulnerable web applications packaged into a virtual machine
 
 ## Download
-Coming soon...
+Visit https://github.com/elespike/lab26-vm/releases/latest and download the provided `.ova` file.
 
 ## Credentials
 | Username | Password |
@@ -38,4 +38,4 @@ This VM is built using [Vagrant](https://blog.lab26.net/vagrant-first-steps-debi
 0. Reduce memory to 2048 MB and CPU count to 1
 0. Ensure that unnecessary interfaces, such as audio and USB, are disabled
 0. Take a snapshot, naming it "Initial State"
-0. Zip it and ship it!
+0. Export to `.ova` and ship it!

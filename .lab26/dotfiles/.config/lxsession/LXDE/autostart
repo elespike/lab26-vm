@@ -1,0 +1,3 @@
+@lxpanel --profile LXDE
+@pcmanfm --desktop --profile LXDE
+/opt/start_mitmproxy.sh

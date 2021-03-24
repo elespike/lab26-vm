@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Name=Start Juice Shop
+Exec=/opt/start_juice-shop.sh
+Terminal=true
+Icon=/usr/share/icons/HighContrast/24x24/emotes/face-devilish.png
+Categories=Network;

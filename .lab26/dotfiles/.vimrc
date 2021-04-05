@@ -1,0 +1,1 @@
+source $VIMRUNTIME/defaults.vim

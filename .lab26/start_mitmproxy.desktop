@@ -1,8 +1,0 @@
-#!/usr/bin/env xdg-open
-[Desktop Entry]
-Type=Application
-Name=Start mitmproxy
-Exec=/opt/start_mitmproxy.sh
-Terminal=true
-Icon=/usr/share/icons/HighContrast/24x24/emotes/face-devilish.png
-Categories=Network;

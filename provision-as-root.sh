@@ -138,7 +138,6 @@ rm -rf /root/.cache
 rm -rf /vagrant/.lab26
 rm -rf /vagrant/*
 rm -rf /var/lib/apt/lists/*
-sed -ie "s/rw,/ro,/" /etc/fstab
 history -c
 reboot
 

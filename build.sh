@@ -23,15 +23,15 @@ else
 fi
 
 echo "[i] Waiting for reboot..."
+sleep 20
+echo "[i] Preparing disk for compression..."
+vagrant ssh -c "sudo /bin/bash -c 'sed -ie \"s/rw,/ro,/\" /etc/fstab && reboot'" \
+    || (echo "[-] Failed!" && exit 1)
 sleep 10
 echo "[i] Freeing up disk space..."
-if vagrant ssh -c "sudo /bin/bash -c 'zerofree -v /dev/sda1 && mount -o remount,rw /dev/sda1 && sed -ie \"s/ro,/rw,/\" /etc/fstab;'"
-then
-    echo "[+] Freed up disk space!"
-else
-    echo "[-] Failed to free up disk space!"
-    exit 1
-fi
+vagrant ssh -c "sudo /bin/bash -c 'sudo zerofree -v /dev/sda1 && mount -o remount,rw /dev/sda1 && sed -ie \"s/ro,/rw,/\" /etc/fstab'" \
+    || (echo "[-] Failed!" && exit 1)
+echo "[+] Freed up disk space!"
 
 while [[ $(vagrant status | grep -o poweroff) != "poweroff" ]]
 do
